@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="novo ico.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: aquamarine;
+            padding: 3px; 
+            box-shadow: 14px 3px 1px black;; 
+               
+        }
+        nav > a {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+             text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;  
+            border-radius: 20px;
+        }
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(153, 150, 150);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+           height: 100px; 
+           width: 100px;
+           margin: 10px;
+           background-color: white;
+           border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+         <section id="assubtos">
+
+         </section>
+         <section id="notícias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam optio libero nulla, error praesentium aliquid ab placeat animi tempore natus odio unde, commodi fugit consequatur quas dignissimos similique autem incidunt.</p>
+                <aside>
+                    <p>Artigo escrito por Tiago De Oliveira Rosa</p>
+                </aside>
+            </article>
+         </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Tiago</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

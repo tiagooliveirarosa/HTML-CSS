@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="novo ico.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+  <h1>Imagens dinâmicas </h1>  
+  <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+  <picture>
+    <source media="(max-width: 770px)" srcset="imagensgimpex/imaexp.png" type="image/png">
+    <source media="(max-width: 1070px)" srcset="imagensgimpex/imaexm.png" type="image/png">
+    <img src="imagensgimpex/imaexg.png" alt="imagem flexível">
+  </picture>
+  <h1>Reproduzindo Áudios</h1>
+  <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+  <audio src="media/icefire.mp3" controls ></audio><!--formatos mais aceitos MP3,WAV,OGG-->
+  <p>outro exemplo de como por audio</p>
+  <audio preload="metadata"  controls >
+    <source src="media/icefire.mp3" type="audio/mpeg">
+    <p>se seu navegador não reproduzir ,infelizmente ele não é compativel,faça o download <a href="media/icefire.mp3">aqui</a></p>
+  </audio> 
+  baixar o audio <a href="media/icefire.mp3" download="icefire.mp3" type="application/mp3" rel="next">aqui</a>
+</body>
+</html>
