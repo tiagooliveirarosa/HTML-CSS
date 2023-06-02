@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tbody > tr:nth-child(odd)/* 2n-1 */{
+            background-color: white;
+        }
+        tbody > tr:nth-child(even)/* 2n */{
+            background-color: lightgray;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        td.num {
+            text-align: center;
+        }
+        td.por {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION = legenda da tabela
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+   <table>
+    <caption>População das Unidades Federativas</caption>
+    <thead>
+        <tr>
+            <!--scope="col" = coluna descendo vertical-->
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+            <th scope="col" style="width: 100px;">% da pop. total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">46 024 937</td>
+            <td class="por">22,2%</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">19 597 330</td>
+            <td class="por">10,0%</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">15 989 929</td>
+            <td class="por">8,0%</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="num">14 016 906</td>
+            <td class="por">7,1%</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="num">11 835 379</td>
+            <td class="por">5,7%</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">11 088 065</td>
+            <td class="por">5,3</td>
+        </tr>
+        <tr>
+            <td>Pernambuco</td>
+            <td class="num">9 051 113</td>
+            <td class="por">4,4%</td>
+        </tr>
+        <tr>
+            <td>Ceará</td>
+            <td class="num">8 936 431</td>
+            <td class="por">4,3%</td>
+        </tr>
+        <tr>
+            <td>Pará</td>
+            <td class="num">8 442 962</td>
+            <td class="por">4,1%</td>
+        </tr>
+        <tr>
+            <td>Santa Catarina</td>
+            <td class="num">7 762 154</td>
+            <td class="por">3,7%</td>
+        </tr>
+        <tr>
+            <td>Goiás</td>
+            <td class="num">6 950 976</td>
+            <td class="por">3,3%</td>
+        </tr>
+        <tr>
+            <td>Maranhão</td>
+            <td class="num">6 800 605</td>
+            <td class="por">3,3%</td>
+        </tr>
+        <tr>
+            <td>Espírito Santo</td>
+            <td class="num">4 108 508</td>
+            <td class="por">1,9</td>
+        </tr>
+        <tr>
+            <td>Paraíba</td>
+            <td class="num">4 030 961</td>
+            <td class="por">1,9%</td>
+        </tr>
+        <tr>
+            <td>Amazonas</td>
+            <td class="num">3 952 262</td>
+            <td class="por">1,9%</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num">3 784 239</td>
+            <td class="por">1,8%</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Norte</td>
+            <td class="num">3 303 953</td>
+            <td class="por">1,6%</td>
+        </tr>
+        <tr>
+            <td>Piauí</td>
+            <td class="num">3 270 174</td>
+            <td class="por">1,6%</td>
+        </tr>
+        <tr>
+            <td>Alagoas</td>
+            <td class="num">3 125 254</td>
+            <td class="por">1,5%</td>
+        </tr>
+        <tr>
+            <td>Distrito Federal</td>
+            <td class="num">2 923 369</td>
+            <td class="por">1,4%</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso do Sul</td>
+            <td class="num">2 833 742</td>
+            <td class="por">1,4%</td>
+        </tr>
+        <tr>
+            <td>Sergipe</td>
+            <td class="num">2 211 868</td>
+            <td class="por">1,1%</td>
+        </tr>
+        <tr>
+            <td>Rondônia</td>
+            <td class="num">1 616 379</td>
+            <td class="por">0,8</td>
+        </tr>
+        <tr>
+            <td>Tocantins</td>
+            <td class="num">1 584 306</td>
+            <td class="por">0,8</td>
+        </tr>
+        <tr>
+            <td>Acre</td>
+            <td class="num">829 780</td>
+            <td class="por">0,4%</td>
+        </tr>
+        <tr>
+            <td>Amapá</td>
+            <td class="num">774 268</td>
+            <td class="por">0,4%</td>
+        </tr>
+        <tr>
+            <td>Roraíma</td>
+            <td class="num">634 805</td>
+            <td class="por">0,3%</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <!--scope="row" = linha na horizontal(lateral)-->
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>207 883 699</strong></td>
+            <td class="por"><strong>100%</strong></td>
+        </tr>
+    </tfoot>
+   </table>
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum enim quo at corrupti reiciendis aliquam quaerat incidunt nobis assumenda dolore voluptatem facilis, repellendus, ea minima earum numquam nesciunt obcaecati suscipit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fugit maiores excepturi, aut asperiores explicabo nobis voluptatem architecto, minus velit sed dolorem minima nisi voluptatibus aliquam fuga, sequi magnam rerum.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur et magni quas cum, perspiciatis maiores molestias ipsa repellendus vel repellat molestiae quibusdam voluptatem nihil dolores quam quos minima eius quisquam.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias sapiente minima unde temporibus voluptas porro facere quibusdam doloribus saepe nisi voluptatum nulla odit nostrum nemo, accusamus dicta corrupti. Veritatis?  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nulla dolorem tempore veritatis placeat, dignissimos omnis consequatur mollitia, maiores dolores nostrum praesentium, nisi earum porro est doloribus sunt ducimus iste.</p>
+
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum enim quo at corrupti reiciendis aliquam quaerat incidunt nobis assumenda dolore voluptatem facilis, repellendus, ea minima earum numquam nesciunt obcaecati suscipit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fugit maiores excepturi, aut asperiores explicabo nobis voluptatem architecto, minus velit sed dolorem minima nisi voluptatibus aliquam fuga, sequi magnam rerum.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur et magni quas cum, perspiciatis maiores molestias ipsa repellendus vel repellat molestiae quibusdam voluptatem nihil dolores quam quos minima eius quisquam.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias sapiente minima unde temporibus voluptas porro facere quibusdam doloribus saepe nisi voluptatum nulla odit nostrum nemo, accusamus dicta corrupti. Veritatis?  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nulla dolorem tempore veritatis placeat, dignissimos omnis consequatur mollitia, maiores dolores nostrum praesentium, nisi earum porro est doloribus sunt ducimus iste.</p>
+
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum enim quo at corrupti reiciendis aliquam quaerat incidunt nobis assumenda dolore voluptatem facilis, repellendus, ea minima earum numquam nesciunt obcaecati suscipit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fugit maiores excepturi, aut asperiores explicabo nobis voluptatem architecto, minus velit sed dolorem minima nisi voluptatibus aliquam fuga, sequi magnam rerum.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur et magni quas cum, perspiciatis maiores molestias ipsa repellendus vel repellat molestiae quibusdam voluptatem nihil dolores quam quos minima eius quisquam.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias sapiente minima unde temporibus voluptas porro facere quibusdam doloribus saepe nisi voluptatum nulla odit nostrum nemo, accusamus dicta corrupti. Veritatis?  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nulla dolorem tempore veritatis placeat, dignissimos omnis consequatur mollitia, maiores dolores nostrum praesentium, nisi earum porro est doloribus sunt ducimus iste.</p>
+
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum enim quo at corrupti reiciendis aliquam quaerat incidunt nobis assumenda dolore voluptatem facilis, repellendus, ea minima earum numquam nesciunt obcaecati suscipit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fugit maiores excepturi, aut asperiores explicabo nobis voluptatem architecto, minus velit sed dolorem minima nisi voluptatibus aliquam fuga, sequi magnam rerum.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur et magni quas cum, perspiciatis maiores molestias ipsa repellendus vel repellat molestiae quibusdam voluptatem nihil dolores quam quos minima eius quisquam.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias sapiente minima unde temporibus voluptas porro facere quibusdam doloribus saepe nisi voluptatum nulla odit nostrum nemo, accusamus dicta corrupti. Veritatis?  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nulla dolorem tempore veritatis placeat, dignissimos omnis consequatur mollitia, maiores dolores nostrum praesentium, nisi earum porro est doloribus sunt ducimus iste.</p>
+
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum enim quo at corrupti reiciendis aliquam quaerat incidunt nobis assumenda dolore voluptatem facilis, repellendus, ea minima earum numquam nesciunt obcaecati suscipit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fugit maiores excepturi, aut asperiores explicabo nobis voluptatem architecto, minus velit sed dolorem minima nisi voluptatibus aliquam fuga, sequi magnam rerum.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur et magni quas cum, perspiciatis maiores molestias ipsa repellendus vel repellat molestiae quibusdam voluptatem nihil dolores quam quos minima eius quisquam.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias sapiente minima unde temporibus voluptas porro facere quibusdam doloribus saepe nisi voluptatum nulla odit nostrum nemo, accusamus dicta corrupti. Veritatis?  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nulla dolorem tempore veritatis placeat, dignissimos omnis consequatur mollitia, maiores dolores nostrum praesentium, nisi earum porro est doloribus sunt ducimus iste.</p>
+
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum enim quo at corrupti reiciendis aliquam quaerat incidunt nobis assumenda dolore voluptatem facilis, repellendus, ea minima earum numquam nesciunt obcaecati suscipit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fugit maiores excepturi, aut asperiores explicabo nobis voluptatem architecto, minus velit sed dolorem minima nisi voluptatibus aliquam fuga, sequi magnam rerum.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur et magni quas cum, perspiciatis maiores molestias ipsa repellendus vel repellat molestiae quibusdam voluptatem nihil dolores quam quos minima eius quisquam.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias sapiente minima unde temporibus voluptas porro facere quibusdam doloribus saepe nisi voluptatum nulla odit nostrum nemo, accusamus dicta corrupti. Veritatis?  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nulla dolorem tempore veritatis placeat, dignissimos omnis consequatur mollitia, maiores dolores nostrum praesentium, nisi earum porro est doloribus sunt ducimus iste.</p>
+
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum enim quo at corrupti reiciendis aliquam quaerat incidunt nobis assumenda dolore voluptatem facilis, repellendus, ea minima earum numquam nesciunt obcaecati suscipit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fugit maiores excepturi, aut asperiores explicabo nobis voluptatem architecto, minus velit sed dolorem minima nisi voluptatibus aliquam fuga, sequi magnam rerum.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur et magni quas cum, perspiciatis maiores molestias ipsa repellendus vel repellat molestiae quibusdam voluptatem nihil dolores quam quos minima eius quisquam.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim alias sapiente minima unde temporibus voluptas porro facere quibusdam doloribus saepe nisi voluptatum nulla odit nostrum nemo, accusamus dicta corrupti. Veritatis?  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nulla dolorem tempore veritatis placeat, dignissimos omnis consequatur mollitia, maiores dolores nostrum praesentium, nisi earum porro est doloribus sunt ducimus iste.</p>
+</body>
+</html>
